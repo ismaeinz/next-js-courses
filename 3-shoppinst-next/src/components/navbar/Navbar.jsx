@@ -2,6 +2,7 @@
 import Link from "next/link";
 import styles from "./page.module.css";
 import React from "react";
+import DarkModeToggle from "../DarkModeToggle/DarkModeToggle";
 
 export default function Navbar() {
   const links = [
@@ -42,6 +43,7 @@ export default function Navbar() {
         Shoppist
       </Link>
       <div className={styles.links}>
+        <DarkModeToggle />
         {links.map((link) => (
           <Link key={link.id} href={link.url} className={styles.link}>
             {link.title}
