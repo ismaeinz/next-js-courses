@@ -1,14 +1,13 @@
 "use client";
 
-import { createContext, useState } from "react";
-
+import React, { createContext, useContext, useState } from "react";
 export const ThemeContext = createContext();
 
-export const ThemeProvider = ({ children }) => {
+export const ThemeContextProvider = ({ children }) => {
   const [mode, setMode] = useState("dark");
 
   const toggle = () => {
-    setMode((prev) => (prev === "dark" ? "light" : "dark"));
+    setMode((prev) => (prev === "dark " ? "light" : "dark"));
   };
 
   return (
@@ -16,4 +15,8 @@ export const ThemeProvider = ({ children }) => {
       <div className={`theme ${mode}`}>{children}</div>
     </ThemeContext.Provider>
   );
+};
+
+export const UseThemeContext = () => {
+  return useContext(ThemeContext);
 };

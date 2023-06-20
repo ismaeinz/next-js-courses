@@ -1,11 +1,11 @@
 .container {
   width: 42px;
-  height: 42px;
-  border: 1px solid #53c28b70;
+  height: 24px;
+  border: 1.5px solid #53c28b70;
   border-radius: 30px;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
   padding: 2px;
   position: relative;
   cursor: pointer;
@@ -20,4 +20,5 @@
   height: 15px;
   background-color: #53c28b;
   border-radius: 50%;
+  position: absolute;
 }
