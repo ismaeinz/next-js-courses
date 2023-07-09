@@ -1,0 +1,34 @@
+.content {
+  display: flex;
+  align-items: center;
+  gap: 100px;
+  text-align: center;
+}
+
+.title {
+  font-size: 60px;
+  margin-bottom: 100px;
+}
+
+.imgContainer {
+  flex: 1;
+  height: 500px;
+  position: relative;
+}
+
+.form {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20
+}
+
+.input .textArea {
+  padding: 20px;
+  background-color: teal;
+  border: none;
+  outline: none;
+  color: white;
+  border: 3px solid green;
+
+}
